@@ -1,0 +1,161 @@
+/* @import './normalize.css'; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #235789;
+  --color-secondary: #327dc3;
+  --color-accent: #e39229;
+  --color-bg--secondary: #84bef5;
+  --color-bg: #fdfffc;
+  --padding-vertical: 5rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  background-color: var(--color-bg);
+}
+
+/* ----- Utility ----- */
+
+.debug {
+  border: 2px solid red;
+}
+
+.skewed-right {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+
+.skewed-left {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+}
+
+/* ----- Header ----- */
+
+/* CTA */
+
+.cta-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.cta-header em {
+  cursor: default;
+}
+
+.cta-header svg {
+  height: 30px;
+  width: 30px;
+  fill: var(--color-primary);
+}
+
+.cta-header svg:hover {
+  transform: scale(1.1);
+}
+
+.cta-header a {
+  display: flex;
+}
+
+/* NAV */
+
+.nav {
+  background-color: var(--color-primary);
+  padding-inline: 5rem;
+  padding-block: 1rem;
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav__list-item {
+  list-style-type: none;
+}
+
+.nav__list-item a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 0.1ch;
+  opacity: 0.8;
+}
+
+.nav__list-item a:hover {
+  opacity: 1;
+  border-bottom: 1px solid #fff;
+}
+
+.nav__list-item:last-child {
+  background-color: var(--color-secondary);
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-radius: 5px;
+}
+
+.nav__list-item:last-child a {
+  font-style: italic;
+  opacity: 1;
+}
+
+.nav__list-item:last-child:hover {
+  transform: scale(1.07);
+}
+
+.nav__list-item:last-child a:hover {
+  border-bottom: none;
+}
+
+/* BANNER */
+
+.banner {
+  background: url('../assets/banner.jpg');
+  height: 600px;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h1 {
+  position: relative;
+  font-size: 10rem;
+  color: var(--color-primary);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+}
+
+.banner h1::after {
+  content: 'Gebäudereinigung';
+  position: absolute;
+  font-family: 'Hurricane';
+  font-size: 8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: var(--color-accent);
+  left: 39%;
+  top: calc(25% + 1.5rem);
+}
