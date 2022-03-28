@@ -290,7 +290,7 @@ body::-webkit-scrollbar-thumb {
 
 .services {
   background-color: var(--color-bg--secondary);
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -335,17 +335,16 @@ body::-webkit-scrollbar-thumb {
 
 .services main img {
   object-fit: contain;
-  width: 450px;
-  height: 450px;
+  width: 500px;
+  height: 500px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .services main {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
-  gap: 6rem;
 }
 
 .current-services {
@@ -384,4 +383,52 @@ body::-webkit-scrollbar-thumb {
   font-size: 3.5rem;
   font-style: italic;
   color: var(--color-secondary);
+}
+
+/* ----- Main__Locations----- */
+
+.locations {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.locations h2 {
+  color: var(--color-primary);
+  font-size: 4rem;
+}
+
+.locations h3 {
+  font-size: 3.5rem;
+  color: #327dc3;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.locations strong {
+  background-color: var(--color-primary);
+  border-radius: 40px;
+  padding-block: 1;
+  padding-inline: 2rem;
+  color: var(--color-bg--secondary);
+}
+
+.locations em {
+  font-size: 1.6rem;
+}
+
+.locations main img {
+  object-fit: contain;
+  width: 600px;
+  height: 600px;
+}
+
+.locations main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 6rem;
 }
