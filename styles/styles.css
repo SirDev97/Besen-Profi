@@ -14,8 +14,8 @@
   --color-primary: #235789;
   --color-secondary: #327dc3;
   --color-accent: #e39229;
-  --color-bg--secondary: #84bef5;
-  --color-bg: #fdfffc;
+  --color-bg: #e6e8fa;
+  --color-bg--secondary: #fafafa;
   --padding-vertical: 5rem;
 }
 
@@ -58,7 +58,7 @@ body {
   padding: 1rem;
 }
 
-.cta-header em {
+.cta-header > span {
   cursor: default;
 }
 
@@ -130,7 +130,7 @@ body {
 /* BANNER */
 
 .banner {
-  background: url('../assets/banner.jpg');
+  background: url('../assets/banner2.jpg');
   height: 600px;
   background-size: cover;
   background-position: bottom;
@@ -146,6 +146,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 6rem;
+  margin-right: 3rem;
 }
 
 .banner h1::after {
@@ -158,4 +159,8 @@ body {
   color: var(--color-accent);
   left: 39%;
   top: calc(25% + 1.5rem);
+}
+
+.banner h1 span {
+  color: var(--color-secondary);
 }
