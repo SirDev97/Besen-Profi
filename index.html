@@ -7,7 +7,7 @@
     <title>Besen Profi | Gebäudereinigung</title>
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
-  <body>
+  <body class="container">
     <header class="header">
       <div class="cta-header">
         <span>Ruf heute an!</span>
@@ -27,8 +27,9 @@
           </svg>
         </a>
       </div>
+
       <nav class="nav">
-        <ul class="nav__list">
+        <ul class="nav__list d-flex">
           <li class="nav__list-item">
             <a href="#services"> Dienstleistungen </a>
           </li>
@@ -42,86 +43,33 @@
             <a href="#testimonials"> Referenzen </a>
           </li>
         </ul>
+        <svg
+          width="20"
+          height="17"
+          xmlns="http://www.w3.org/2000/svg"
+          class="menu d-block"
+        >
+          <g fill="#FFF" fill-rule="evenodd">
+            <path d="M0 0h20v3H0zM0 7h20v3H0zM0 14h20v3H0z" />
+          </g>
+        </svg>
+        <svg
+          width="18"
+          height="17"
+          xmlns="http://www.w3.org/2000/svg"
+          class="menu-close d-none"
+        >
+          <path
+            d="M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z"
+            fill="#FFF"
+            fill-rule="evenodd"
+          />
+        </svg>
       </nav>
       <div class="banner">
         <h1><em>Besen</em> <span>Profi</span></h1>
       </div>
     </header>
-    <main class="main">
-      <div class="main__hero">
-        <section class="main__hero-top">
-          <p>
-            Sie sind auf der Suche nach einer zuverlässigen Reinigungskraft?
-          </p>
-          <h2>Dann sind Sie bei uns genau richtig</h2>
-        </section>
-        <section class="main__hero-bottom">
-          <h2><em>Schnell, Professionell, Zuverlässigen.</em></h2>
-          <p>schon ab <strong>18&euro;</strong> Pro Stunde</p>
-        </section>
-      </div>
-      <section id="services" class="services">
-        <header class="services__header">
-          <h2>Dienstleistungen</h2>
-          <p>
-            Willkommen bei unserer Gebäudereinigung Wie bieten folgenden
-            Dienstleistungen.
-          </p>
-        </header>
-        <main>
-          <div class="current-services">
-            <h3>Wie übernehmen für Sie die:</h3>
-            <ul>
-              <li>Wohnungsreinigung</li>
-              <li>Hausreinigung</li>
-              <li>Fensterreinigung</li>
-              <li>Praxisreinigung</li>
-              <li>Büroreinigung</li>
-              <li>Treppenreinigung</li>
-              <li>Gebäudereinigung</li>
-              <li>Fitneßstudioreinigung</li>
-            </ul>
-            <h4>KITAS/SCHULEN ab <strong>20&euro;</strong></h4>
-          </div>
-          <img src="assets/maid.png" alt="photo of a worker" />
-        </main>
-      </section>
-      <section id="locations" class="locations">
-        <header>
-          <h2>Wir bieten Reinigungsdienste an!</h2>
-          <h3>
-            In <strong>Berlin <em>und Umland</em></strong>
-          </h3>
-        </header>
-        <main>
-          <div class="current-services">
-            <ul>
-              <li>Spandau</li>
-              <li>Tegel</li>
-              <li>Reinickendorf</li>
-              <li>Charlottenburg</li>
-              <li>Mitte</li>
-              <li>Steglitz</li>
-              <li>Schöneberg</li>
-              <li>Henningsdorf und mehr...</li>
-            </ul>
-          </div>
-          <img src="assets/berlin.png" alt="photo of a worker" />
-        </main>
-      </section>
-      <section id="about" class="about">
-        <h2>Über</h2>
-        <p>
-          Besen Profi ist lange genug im Geschäft, um zu wissen, was Sie
-          brauchen und wie Sie es bereitstellen können. Wir haben Hunderte von
-          zufriedenen Kunden, die die Qualität unserer Reinigungsdienste
-          bestätigen werden. Egal, ob es sich um Ihr Zuhause, Ihr Büro oder
-          einen speziellen Raum handelt, bei dem Sie Hilfe benötigen, wir
-          reinigen ihn zu Ihrer Zufriedenheit.
-        </p>
-      </section>
-      <section class="testimonials" id="testimonials"></section>
-    </main>
-    <footer class="footer"></footer>
+    <script src="index.js" defer></script>
   </body>
 </html>
