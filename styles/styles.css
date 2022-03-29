@@ -64,6 +64,10 @@ body::-webkit-scrollbar-thumb {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 4rem;
+  background-color: var(--color-bg--secondary);
+  border-radius: 20px;
+  margin-block: 4rem;
 }
 
 .skewed-right {
