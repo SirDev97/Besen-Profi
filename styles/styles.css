@@ -578,6 +578,11 @@ body::-webkit-scrollbar-thumb {
   .main__services-header {
     align-items: center;
   }
+
+  .main__services-header p {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .main__services-header h2 {
@@ -611,6 +616,13 @@ body::-webkit-scrollbar-thumb {
   }
   .main__services-header p {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__services-header p {
+    width: 100%;
+    text-align: center;
   }
 }
 
