@@ -823,3 +823,136 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.8rem;
   }
 }
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  background-color: var(--color-bg--secondary);
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.besen-profi h1 {
+  position: relative;
+  font-size: 6rem;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.besen-profi h1::after {
+  content: 'Gebäudereinigung';
+  position: absolute;
+  font-family: 'Hurricane';
+  font-size: 5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: var(--color-accent);
+  right: 20%;
+  bottom: calc(-35% + 1.5rem);
+}
+
+.besen-profi h1 span {
+  color: var(--color-secondary);
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.footer li {
+  display: flex;
+  gap: 2rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: var(--color-secondary);
+}
+
+.footer li:first-child {
+  color: #2584ff;
+}
+
+.footer svg {
+  width: 25px;
+  height: 25px;
+  fill: var(--color-primary);
+}
+
+.last-item {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  width: 30%;
+  text-align: center;
+  padding: 4rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 15px rgb(195 199 202 / 70%);
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+
+  .last-item {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .besen-profi h1 {
+    font-size: 4rem;
+  }
+
+  .besen-profi h1::after {
+    font-size: 4rem;
+
+    right: 30%;
+    bottom: calc(-55% + 1.5rem);
+  }
+
+  .footer li {
+    font-size: 1.8rem;
+  }
+
+  .footer svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .last-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .besen-profi h1 {
+    font-size: 3.5rem;
+  }
+
+  .besen-profi h1::after {
+    font-size: 3.5rem;
+
+    right: 25%;
+    bottom: calc(-55% + 1.5rem);
+  }
+
+  .footer li {
+    font-size: 1.4rem;
+  }
+
+  .footer svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .last-item {
+    font-size: 1.6rem;
+  }
+}
